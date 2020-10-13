@@ -46,14 +46,14 @@ class _HelloWorldState extends State<HelloWorld>{
   double avglon = 0;
   int avgcnt = 0;
 
-  ArCoreController arCoreController;
+//  ArCoreController arCoreController;
   StreamSubscription<Position> positionStream;
 
   void initState(){
     super.initState();
 
     // 方角の取得開始
-    FlutterCompass.events.listen(_onCompassData);
+//    FlutterCompass.events.listen(_onCompassData);
 
     //_getLocation(context);
     positionStream = getPositionStream(desiredAccuracy: LocationAccuracy.best).listen(_onGetPosition);
@@ -66,7 +66,7 @@ class _HelloWorldState extends State<HelloWorld>{
         //body: ArCoreView(onArCoreViewCreated: _onArCoreViewCreated,),
         body: new Stack(
           children: <Widget>[
-            ArCoreView(onArCoreViewCreated: _onArCoreViewCreated,),
+//            ArCoreView(onArCoreViewCreated: _onArCoreViewCreated,),
             new Center(
               child: new Container(
                 child: new Text(_acc,
@@ -105,6 +105,8 @@ class _HelloWorldState extends State<HelloWorld>{
     );
   }*/
 
+/**
+ * ar core
   void _onArCoreViewCreated(ArCoreController controller){
     arCoreController = controller;
 
@@ -115,7 +117,10 @@ class _HelloWorldState extends State<HelloWorld>{
     //_addCylindre(arCoreController);
     //_addCube(arCoreController);
   }
+ */
 
+/**
+ * ar core
   void _addSphere(ArCoreController controller){
     final material = ArCoreMaterial(
       color: Color.fromARGB(200, 66, 134, 244),);
@@ -132,7 +137,10 @@ class _HelloWorldState extends State<HelloWorld>{
 
     controller.addArCoreNode(node);
   }
+  */
 
+/**
+ * ar core
   void _addARObject(ArCoreController controller, double x, double z){
     controller.removeNode(nodeName: "treasurebox01");
     controller.init();
@@ -151,10 +159,14 @@ class _HelloWorldState extends State<HelloWorld>{
 
     controller.addArCoreNode(node);
   }
+*/
 
+/**
+ * ar core
   void _removeARObject(ArCoreController controller){
     controller.removeNode(nodeName: "treasurebox01");
   }
+*/
 
   /// 方角取得時の処理
   void _onCompassData(double c){
@@ -188,7 +200,7 @@ class _HelloWorldState extends State<HelloWorld>{
       //double rotation = toRadians(bear) - _radians;
       rotation = bear360 - _compas;
       if( rotation < 0 ) rotation = 360 + rotation;
-      rotation = 360 + 90 - rotation;;
+      rotation = 360 + 90 - rotation;
       if( rotation >= 360 ) rotation = rotation - 360;
       debugPrint("Target Position  dist: " + dist.toString() + "  rot: " + rotation.toString());
 
@@ -212,7 +224,10 @@ class _HelloWorldState extends State<HelloWorld>{
       //_addARObject(arCoreController);
       if( position.accuracy < 25 && dist <= 90 &&  !_flag_show ){
         //_flag_show = true;
+/**
+ * ar core
         _addARObject(arCoreController, xx, zz);
+        */
       } else if( dist > 10 && _flag_show ){
         //_flag_show = false;
         //_removeARObject(arCoreController);
@@ -222,7 +237,10 @@ class _HelloWorldState extends State<HelloWorld>{
 
   @override
   void dispose(){
+/**
+ * ar core
     arCoreController.dispose();
+    */
     super.dispose();
   }
 
