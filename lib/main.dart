@@ -3,7 +3,7 @@ import 'dart:math';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:arcore_flutter_plugin/arcore_flutter_plugin.dart';
+import 'package:arkit_plugin/arkit_plugin.dart';
 import 'package:flutter/rendering.dart';
 import 'package:vector_math/vector_math_64.dart' as vector;
 import 'package:flutter_compass/flutter_compass.dart';
@@ -46,7 +46,7 @@ class _HelloWorldState extends State<HelloWorld>{
   double avglon = 0;
   int avgcnt = 0;
 
-//  ArCoreController arCoreController;
+  ARKitController arKitController;
   StreamSubscription<Position> positionStream;
 
   void initState(){
@@ -66,7 +66,7 @@ class _HelloWorldState extends State<HelloWorld>{
         //body: ArCoreView(onArCoreViewCreated: _onArCoreViewCreated,),
         body: new Stack(
           children: <Widget>[
-//            ArCoreView(onArCoreViewCreated: _onArCoreViewCreated,),
+            ARKitSceneView(onARKitViewCreated: _onARKitViewCreated,),
             new Center(
               child: new Container(
                 child: new Text(_acc,
@@ -105,68 +105,62 @@ class _HelloWorldState extends State<HelloWorld>{
     );
   }*/
 
-/**
- * ar core
-  void _onArCoreViewCreated(ArCoreController controller){
-    arCoreController = controller;
+  void _onARKitViewCreated(ARKitController controller){
+    arKitController = controller;
 
-    _addSphere(arCoreController);
+    _addSphere(arKitController);
     //_add3DObj(arCoreController);
 
 
     //_addCylindre(arCoreController);
     //_addCube(arCoreController);
   }
- */
 
-/**
- * ar core
-  void _addSphere(ArCoreController controller){
-    final material = ArCoreMaterial(
-      color: Color.fromARGB(200, 66, 134, 244),);
-    final sphere = ArCoreSphere(
+  void _addSphere(ARKitController controller){
+    final material = ARKitMaterial(
+      diffuse: ARKitMaterialProperty(
+        color: Color.fromARGB(200, 66, 134, 244),)
+      );
+    final sphere = ARKitSphere(
       materials: [material],
       radius: 1.0,);
-    final node = ArCoreNode(
-      shape: sphere,
+    final node = ARKitNode(
+      geometry: sphere,
       name: "sphere",
       //position: vector.Vector3(0,0,-1.6),
       //position: vector.Vector3(cos(_radians),0,sin(_radians)),
       position: vector.Vector3(0,-5,-5),
     );
 
-    controller.addArCoreNode(node);
+    controller.add(node);
   }
-  */
 
-/**
- * ar core
-  void _addARObject(ArCoreController controller, double x, double z){
-    controller.removeNode(nodeName: "treasurebox01");
-    controller.init();
-    final material = ArCoreMaterial(
-      color: Color.fromARGB(255, 66, 184, 244),);
-    final sphere = ArCoreSphere(
+
+  void _addARObject(ARKitController controller, double x, double z){
+    controller.remove("treasurebox01");
+    //controller.init();
+    final material = ARKitMaterial(
+      diffuse: ARKitMaterialProperty (
+        color: Color.fromARGB(255, 66, 184, 244),)
+      );
+    final sphere = ARKitSphere(
       materials: [material],
       radius: 1.0,);
-    final node = ArCoreNode(
-      shape: sphere,
+    final node = ARKitNode(
+      geometry: sphere,
       name: "treasurebox01",
       //position: vector.Vector3(0,0,-1.6),
       //position: vector.Vector3(cos(_radians),0,sin(_radians)),
       position: vector.Vector3(x,-1,z),
     );
 
-    controller.addArCoreNode(node);
+    controller.add(node);
   }
-*/
 
-/**
- * ar core
-  void _removeARObject(ArCoreController controller){
-    controller.removeNode(nodeName: "treasurebox01");
+  void _removeARObject(ARKitController controller){
+    controller.remove("treasurebox01");
   }
-*/
+
 
   /// 方角取得時の処理
   void _onCompassData(double c){
@@ -224,10 +218,8 @@ class _HelloWorldState extends State<HelloWorld>{
       //_addARObject(arCoreController);
       if( position.accuracy < 25 && dist <= 90 &&  !_flag_show ){
         //_flag_show = true;
-/**
- * ar core
-        _addARObject(arCoreController, xx, zz);
-        */
+        _addARObject(arKitController, xx, zz);
+
       } else if( dist > 10 && _flag_show ){
         //_flag_show = false;
         //_removeARObject(arCoreController);
@@ -237,10 +229,8 @@ class _HelloWorldState extends State<HelloWorld>{
 
   @override
   void dispose(){
-/**
- * ar core
-    arCoreController.dispose();
-    */
+    arKitController.dispose();
+
     super.dispose();
   }
 
