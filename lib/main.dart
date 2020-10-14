@@ -57,6 +57,10 @@ class _HelloWorldState extends State<HelloWorld>{
 
     //_getLocation(context);
     positionStream = getPositionStream(desiredAccuracy: LocationAccuracy.best).listen(_onGetPosition);
+
+    //3D
+    
+
   }
 
   Widget build(BuildContext context){
@@ -108,9 +112,9 @@ class _HelloWorldState extends State<HelloWorld>{
   void _onARKitViewCreated(ARKitController controller){
     arKitController = controller;
 
-    _addSphere(arKitController);
-    //_add3DObj(arCoreController);
-
+print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    //_addSphere(arKitController);
+    _add3DObj(arKitController);
 
     //_addCylindre(arCoreController);
     //_addCube(arCoreController);
@@ -131,6 +135,42 @@ class _HelloWorldState extends State<HelloWorld>{
       //position: vector.Vector3(cos(_radians),0,sin(_radians)),
       position: vector.Vector3(0,-5,-5),
     );
+
+    controller.add(node);
+  }
+
+
+  void _add3DObj(ARKitController controller){
+
+print("bbbbbbbbbbbbbbbbbbbbbbbbbb");
+
+    final node = ARKitReferenceNode(
+      url: 'art.scnassets/chest.obj',
+//      url: 'art.scnassets/chest.scn',
+      scale: vector.Vector3.all(1),
+      position: vector.Vector3(0,-5,-5),
+      ); 
+
+print("ddddddddddddddddddddddd");
+
+/*
+
+    final material = ARKitMaterial(
+      diffuse: ARKitMaterialProperty(
+        image: 'art.scnassets/chest.scn',
+        )
+      );
+    final sphere = ARKitSphere(
+      materials: [material],
+      radius: 1.0,);
+    final node = ARKitNode(
+      geometry: sphere,
+      name: "sphere",
+      //position: vector.Vector3(0,0,-1.6),
+      //position: vector.Vector3(cos(_radians),0,sin(_radians)),
+      position: vector.Vector3(0,-5,-5),
+    );
+    */
 
     controller.add(node);
   }
@@ -182,8 +222,8 @@ class _HelloWorldState extends State<HelloWorld>{
       //double lon1 = 133.5614302;
       double lat1 = 33.565270;
       double lon1 = 133.561719;
-      lat0 = 33.565257;
-      lon0 = 133.561714;
+//      lat0 = 33.565257;
+//      lon0 = 133.561714;
 
       debugPrint("Current Position  lat: " + position.latitude.toString() + "   lon: " + position.longitude.toString() + "   acc: " + position.accuracy.toString());
 

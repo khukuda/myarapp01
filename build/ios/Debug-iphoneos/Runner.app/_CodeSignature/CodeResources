@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		bUQ/g2+4rsyldRgpqyikwrE3kH0=
+		crBE2Vrrl3OTuGK+7yfCvYenW6A=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		NfKAtE7Z/Fsvrvtc35ZQ6UEp0vY=
+		WCMIfgtvQkKVPVrf/qXDgXiIETU=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		notP4FaqLrxx3X3pCJ9bLrdi5L8=
+		ygkrkl+kU4rSpVcd8sy1UaMArWM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		2WiyCD/IWFvm27i/DHjwDM8rEpc=
+		sqwW+FLDUxQ8PZI48oQUW6YoAP4=
 		</data>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Frameworks/arkit_plugin.framework/arkit_plugin</key>
 		<data>
-		Pi7KxIBoQ8tyIGbw3UQyc2DyCnQ=
+		APk3EWImWvmRIFBFGmcMSDWstrg=
 		</data>
 		<key>Frameworks/flutter_compass.framework/Info.plist</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Frameworks/flutter_compass.framework/flutter_compass</key>
 		<data>
-		WlN8EcQ1YAh7aCUEYY4YEh6+29Y=
+		zODN/9MbSCQpqJ2raY8ACriyhkQ=
 		</data>
 		<key>Frameworks/geolocator.framework/Info.plist</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Frameworks/geolocator.framework/geolocator</key>
 		<data>
-		EKLWDI9CXrvFAY4WnLhzetHhB84=
+		NyDcMs6fSmjZpLUKVitmRyv7GKU=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -287,6 +287,18 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>art.scnassets/chest.obj</key>
+		<data>
+		bjVFz82lPDpI5FXRBTZnhI0rmwk=
+		</data>
+		<key>art.scnassets/chest.scn</key>
+		<data>
+		O6xjoaFEy8waFvg1JpzL9XIMV84=
+		</data>
+		<key>chest.obj</key>
+		<data>
+		bjVFz82lPDpI5FXRBTZnhI0rmwk=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
@@ -481,7 +493,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			atn5Qf8IpKYZlsqqIwadVEKqle5th00F9qkL06DB324=
+			DG7IR69A1Z6v9E+fpqzkJBiU5XtHQHUxI80VBLvvpoc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -495,7 +507,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			tvRDaKZnZrrM1+by6xo/NvuqheZfH0Fi6aHy10QGHfI=
+			NbIhr5g+5W2WdGS5/wBBnpDnKY1/H+83cO5B7rIR4i4=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -565,7 +577,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oO4IB67X7Ha4+ib5NktlVvb1HPyxHkRDhPkod6lR2W0=
+			4fsdM+yFRkEk0D1/C8YPkcUR7XKF0/fGg6a5QQWjKTI=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -586,7 +598,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5TtKUsvT6Wktsg8QSI1e+vgqQAI6/gI55HLsrWAC4r0=
+			3svCTtcgCkE/RJ+NS9oe7BQKMc0ImKBC6MfA1RGSnI4=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
@@ -628,7 +640,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1j5NAVfgPH0pfmkmmGGAAPyAZxzKMdpDl//temLJL30=
+			DLEDHNAndq42iT48/0Ymfmlc/s/IIk4u6ZATwLy4OAw=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_compass.framework/Info.plist</key>
@@ -649,7 +661,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A9joE0duGgL50Wcwj/K/OFgGHW2vb+XGMGzds16VvfM=
+			gUa+rM7oxBekEPd3zmZ9q3Q5g5nYmTszExhIoof3xng=
 			</data>
 		</dict>
 		<key>Frameworks/geolocator.framework/Info.plist</key>
@@ -670,7 +682,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NQJIcSEnphbbY06dFaWpWMn+qRzwl2bjzNv4KjA/IuU=
+			m/oHpbyc6w4Ax9ywxqOwp0f1pUVSacSWIvlQjcAcjig=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -776,6 +788,27 @@
 			<key>hash2</key>
 			<data>
 			M7extcQkMam0Jp7pwxz/EMLKof0+QrN7GuCT6FJt5JI=
+			</data>
+		</dict>
+		<key>art.scnassets/chest.obj</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CnC/NJJT7JHKc5bjVZmZLsBiZMTqL288N/CljMhHCu0=
+			</data>
+		</dict>
+		<key>art.scnassets/chest.scn</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Ou61x4JEY/XW4sL6u85SER3yMwq86o5NSfjXdBo7IJ4=
+			</data>
+		</dict>
+		<key>chest.obj</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CnC/NJJT7JHKc5bjVZmZLsBiZMTqL288N/CljMhHCu0=
 			</data>
 		</dict>
 		<key>embedded.mobileprovision</key>
