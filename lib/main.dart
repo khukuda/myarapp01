@@ -145,10 +145,16 @@ print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 print("bbbbbbbbbbbbbbbbbbbbbbbbbb");
 
     final node = ARKitReferenceNode(
-      url: 'art.scnassets/chest.obj',
+      url: 'art.scnassets/Andy.obj',
 //      url: 'art.scnassets/chest.scn',
-      scale: vector.Vector3.all(1),
+      scale: vector.Vector3.all(30),
       position: vector.Vector3(0,-5,-5),
+ /*     light: ARKitLight(
+        color: Color.fromARGB(200, 66, 134, 244),
+        intensity: 3000,
+        type: ARKitLightType.spot
+        )
+        */
       ); 
 
 print("ddddddddddddddddddddddd");

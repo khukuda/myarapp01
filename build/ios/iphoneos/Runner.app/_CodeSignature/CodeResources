@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		crBE2Vrrl3OTuGK+7yfCvYenW6A=
+		zQZm0dRmJpB/K37CR/S9op6WNEU=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		WCMIfgtvQkKVPVrf/qXDgXiIETU=
+		C4Dmt90t/vJETCHrbQEjUHXWYUs=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		ygkrkl+kU4rSpVcd8sy1UaMArWM=
+		bgrdkjdt2Gi3hEYmHFFsum+SG5Y=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -170,7 +170,7 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		sqwW+FLDUxQ8PZI48oQUW6YoAP4=
+		EYbaMGFBmBFhu9Ak3OKble5N3TY=
 		</data>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Frameworks/arkit_plugin.framework/arkit_plugin</key>
 		<data>
-		APk3EWImWvmRIFBFGmcMSDWstrg=
+		KTRhH1XhDxmLZPQzwU+uJiGvXJQ=
 		</data>
 		<key>Frameworks/flutter_compass.framework/Info.plist</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Frameworks/flutter_compass.framework/flutter_compass</key>
 		<data>
-		zODN/9MbSCQpqJ2raY8ACriyhkQ=
+		uggVXzZOZtUOK9v79fUsijKRFaY=
 		</data>
 		<key>Frameworks/geolocator.framework/Info.plist</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Frameworks/geolocator.framework/geolocator</key>
 		<data>
-		NyDcMs6fSmjZpLUKVitmRyv7GKU=
+		OhSShlte4Jle8MdJQDlNze92ScI=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -288,6 +288,54 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>art.scnassets/Andy.mtl</key>
+		<data>
+		VZzxKv0l6obEUsyVNBp8yWU+sys=
+		</data>
+		<key>art.scnassets/Andy.obj</key>
+		<data>
+		QXV+cwSK+/nUL7n9U03YXW9iWWU=
+		</data>
+		<key>art.scnassets/Andy.sfa</key>
+		<data>
+		/m1EWprKGOaTXRSwYOVis7NWVXQ=
+		</data>
+		<key>art.scnassets/Andy_Diffuse.png</key>
+		<data>
+		+PkfETJUkryzNENWgPAZBNwDu60=
+		</data>
+		<key>art.scnassets/ArcticFox_Diffuse.png</key>
+		<data>
+		aXA45uArr4lfbVw8X0CXjj2gWA0=
+		</data>
+		<key>art.scnassets/ArcticFox_Posed.mtl</key>
+		<data>
+		jafA20NJnZi6Bw4sFwvmY1lBmW4=
+		</data>
+		<key>art.scnassets/ArcticFox_Posed.obj</key>
+		<data>
+		kZg6OtVT5UVs2T59sN9/3Si+BtQ=
+		</data>
+		<key>art.scnassets/ArcticFox_Posed.sfa</key>
+		<data>
+		ZmNGsmoEZjMQHBJoEGnDNYxkN4A=
+		</data>
+		<key>art.scnassets/TocoToucan.mtl</key>
+		<data>
+		D0e6lIzBYVxzqv6AWlDYcgb1oBU=
+		</data>
+		<key>art.scnassets/TocoToucan.obj</key>
+		<data>
+		5LI1SutrooIaURyWgDyh0n+u3Ao=
+		</data>
+		<key>art.scnassets/TocoToucan.sfa</key>
+		<data>
+		CfqhU+iokmQTcXcBTXTeO8JlJOA=
+		</data>
+		<key>art.scnassets/TocoToucan_Albedo.png</key>
+		<data>
+		EoPNzl5s/4tbeTqawvCcTCyO+bY=
+		</data>
 		<key>art.scnassets/chest.obj</key>
 		<data>
 		bjVFz82lPDpI5FXRBTZnhI0rmwk=
@@ -295,6 +343,26 @@
 		<key>art.scnassets/chest.scn</key>
 		<data>
 		O6xjoaFEy8waFvg1JpzL9XIMV84=
+		</data>
+		<key>art.scnassets/ear_fur.png</key>
+		<data>
+		aH8VPEx/0uF5YvA7DLRc1jMeeSc=
+		</data>
+		<key>art.scnassets/fox_face.fbx</key>
+		<data>
+		TcxgYKQ82tmKWaoJOgSaYKQBb6Y=
+		</data>
+		<key>art.scnassets/fox_face.sfa</key>
+		<data>
+		yAP/Mgx9DvDJrBTu4jLjkWmblIw=
+		</data>
+		<key>art.scnassets/fox_face_material.mat</key>
+		<data>
+		C8qi+Yrqo5DS4xe8qPgSZVfk4eg=
+		</data>
+		<key>art.scnassets/nose_fur.png</key>
+		<data>
+		JichOu+Yf7LhGC0gBZ6zi+oR0CE=
 		</data>
 		<key>chest.obj</key>
 		<data>
@@ -493,7 +561,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DG7IR69A1Z6v9E+fpqzkJBiU5XtHQHUxI80VBLvvpoc=
+			0OoE6KyYHKuAHnzs4hWljkY7w/CJrf4YoFUde7GkfIc=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -507,7 +575,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NbIhr5g+5W2WdGS5/wBBnpDnKY1/H+83cO5B7rIR4i4=
+			UuPL0VPbQuyF3Acbw3XrQmxewO9StGG5kHRHBiAhk+M=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -577,7 +645,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4fsdM+yFRkEk0D1/C8YPkcUR7XKF0/fGg6a5QQWjKTI=
+			UY0xXobZpEDoCcePT1aPVELjD/JRgdapF/jt89G8jXs=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -598,7 +666,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3svCTtcgCkE/RJ+NS9oe7BQKMc0ImKBC6MfA1RGSnI4=
+			McbiGYsyl7/kZN5lFPiEHeGhgTLZ2ShEKutLFSa6D50=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
@@ -640,7 +708,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DLEDHNAndq42iT48/0Ymfmlc/s/IIk4u6ZATwLy4OAw=
+			jD7wK6XULtHlIvI14Eq0Lly8TT0JQtOwv0oZYzLA/lk=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_compass.framework/Info.plist</key>
@@ -661,7 +729,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gUa+rM7oxBekEPd3zmZ9q3Q5g5nYmTszExhIoof3xng=
+			XHTvsgd8TUyjB8Sg6nuYee/YhBWaYwqPdx/znwimDMk=
 			</data>
 		</dict>
 		<key>Frameworks/geolocator.framework/Info.plist</key>
@@ -682,7 +750,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			m/oHpbyc6w4Ax9ywxqOwp0f1pUVSacSWIvlQjcAcjig=
+			DOCcyYh8SJdheHHppx78+tj16O1+Pf4WVInn9+/yG/U=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -790,6 +858,90 @@
 			M7extcQkMam0Jp7pwxz/EMLKof0+QrN7GuCT6FJt5JI=
 			</data>
 		</dict>
+		<key>art.scnassets/Andy.mtl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Plis7S4Eft8ppWCo38b7YEa0AhO/QKFWHlKZiX0hxu8=
+			</data>
+		</dict>
+		<key>art.scnassets/Andy.obj</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k2QUqAv58nrUaIzYRLS+BsY88uupBgW+50M4J9FBbLI=
+			</data>
+		</dict>
+		<key>art.scnassets/Andy.sfa</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			oZAe76cncU+1mjnY7YTQDWbU95gtUIC1fWziG12ADr8=
+			</data>
+		</dict>
+		<key>art.scnassets/Andy_Diffuse.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			tsYYl9irbV58Atc9RLKCs9Gcye1JWSN/jD5FXKKRTHc=
+			</data>
+		</dict>
+		<key>art.scnassets/ArcticFox_Diffuse.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IkAVNL/i6A0nj1CkAmZTT5pVIS/8qHbhrCwTNFuqr6k=
+			</data>
+		</dict>
+		<key>art.scnassets/ArcticFox_Posed.mtl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7gtE7eRpJy53NSAB5GXsK5TIz93nDZzgh5bRigK2Xik=
+			</data>
+		</dict>
+		<key>art.scnassets/ArcticFox_Posed.obj</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1RMp1ZsnWyE+WIptJ2zOnFSZA1miexVQMaWUpmN5n78=
+			</data>
+		</dict>
+		<key>art.scnassets/ArcticFox_Posed.sfa</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VuySq/b/DsU5F73RAeNk2voSD2HKZ8K3130WW3R5fFk=
+			</data>
+		</dict>
+		<key>art.scnassets/TocoToucan.mtl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			t/aHhyVedVPDK59GJN15MqH0I7tDllzk7t6Z7djhhKU=
+			</data>
+		</dict>
+		<key>art.scnassets/TocoToucan.obj</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EsCVuPE5WBPct9f9Z1JVEPl/Z3r1VRyCi6MrUMxp71Y=
+			</data>
+		</dict>
+		<key>art.scnassets/TocoToucan.sfa</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0YmGOh+G5MWHB2pOzYbgy3Xc5xWmEqJUJ2oMVFQ5/yM=
+			</data>
+		</dict>
+		<key>art.scnassets/TocoToucan_Albedo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			E8bmJlvS3G7ZfWGz2tJSumWQ7Sg02Dxw0Z3Jt0aYjzs=
+			</data>
+		</dict>
 		<key>art.scnassets/chest.obj</key>
 		<dict>
 			<key>hash2</key>
@@ -802,6 +954,41 @@
 			<key>hash2</key>
 			<data>
 			Ou61x4JEY/XW4sL6u85SER3yMwq86o5NSfjXdBo7IJ4=
+			</data>
+		</dict>
+		<key>art.scnassets/ear_fur.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4C0RPFgv+/M8xyEJ4haYLNRKfwdqYoxrfSrVYiVHj7g=
+			</data>
+		</dict>
+		<key>art.scnassets/fox_face.fbx</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dDYycxTSpCyKkUCqmQgox6QjBM3GWVZ1sOVjpl6OYyo=
+			</data>
+		</dict>
+		<key>art.scnassets/fox_face.sfa</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Whql3+iZHNpcbBLiadrLwroTrKTYjDs/s2tBw76nfWs=
+			</data>
+		</dict>
+		<key>art.scnassets/fox_face_material.mat</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Zs4pPTqGOi9y/vOKawVoEsuqCkUsNSL9quzFVMECaUY=
+			</data>
+		</dict>
+		<key>art.scnassets/nose_fur.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			hYuHXR660AlKDRSX5Y9TQ5vNCPcxNaroLoIKOEwAuGU=
 			</data>
 		</dict>
 		<key>chest.obj</key>
