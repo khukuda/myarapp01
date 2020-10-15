@@ -162,13 +162,27 @@ class _HelloWorldState extends State<HelloWorld>{
   }
 
   void tapAction (List<String> name) {
-print("tap:"+name.toString());
+print("tap:"+name.join(":::"));
     Navigator.push(
       context,
+      PageRouteBuilder(
+        pageBuilder: (context, animation, secondaryAnimation) => getPage(),
+        transitionsBuilder: (context, animation, secondaryAnimation, child){
+          return ZoomPageTransitionsBuilder().buildTransitions(
+            MaterialPageRoute(builder: (context) => getPage()),
+            context,
+            animation,
+            secondaryAnimation,
+            child
+          );
+        }
+      )
+/*
       new MaterialPageRoute<Null>(
         settings: const RouteSettings(name: "/getAction"),
         builder: (BuildContext context) => getPage(),
       ),
+      */
     );
   }
 
