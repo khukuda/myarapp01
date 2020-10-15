@@ -163,8 +163,14 @@ class _HelloWorldState extends State<HelloWorld>{
 
   void tapAction (List<String> name) {
 print("tap:"+name.toString());
+    Navigator.push(
+      context,
+      new MaterialPageRoute<Null>(
+        settings: const RouteSettings(name: "/getAction"),
+        builder: (BuildContext context) => getPage(),
+      ),
+    );
   }
-
 
   void _addARObject(ARKitController controller, double x, double z){
     controller.remove("treasurebox01");
@@ -272,4 +278,21 @@ print("tap:"+name.toString());
     return radians * 180 / pi;
   }
 
+}
+
+class getPage extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+//      appBar: AppBar(title: Text('Flutter Demo 2'),),
+      body: Center(
+        child: RaisedButton(
+          child: Text('back'),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
+    );
+  }
 }
