@@ -70,7 +70,7 @@ class _HelloWorldState extends State<HelloWorld>{
         //body: ArCoreView(onArCoreViewCreated: _onArCoreViewCreated,),
         body: new Stack(
           children: <Widget>[
-            ARKitSceneView(onARKitViewCreated: _onARKitViewCreated,),
+            ARKitSceneView(onARKitViewCreated: _onARKitViewCreated, enableTapRecognizer: true, ),
             new Center(
               child: new Container(
                 child: new Text(_acc,
@@ -112,7 +112,8 @@ class _HelloWorldState extends State<HelloWorld>{
   void _onARKitViewCreated(ARKitController controller){
     arKitController = controller;
 
-print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+    arKitController.onNodeTap = tapAction;
+
     //_addSphere(arKitController);
     _add3DObj(arKitController);
 
@@ -142,13 +143,12 @@ print("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
   void _add3DObj(ARKitController controller){
 
-print("bbbbbbbbbbbbbbbbbbbbbbbbbb");
-
     final node = ARKitReferenceNode(
       url: 'art.scnassets/Andy.obj',
 //      url: 'art.scnassets/chest.scn',
-      scale: vector.Vector3.all(30),
-      position: vector.Vector3(0,-5,-5),
+      scale: vector.Vector3.all(1),
+      position: vector.Vector3(0,-0.5,-0.5),
+      name: "andy"
  /*     light: ARKitLight(
         color: Color.fromARGB(200, 66, 134, 244),
         intensity: 3000,
@@ -157,28 +157,12 @@ print("bbbbbbbbbbbbbbbbbbbbbbbbbb");
         */
       ); 
 
-print("ddddddddddddddddddddddd");
-
-/*
-
-    final material = ARKitMaterial(
-      diffuse: ARKitMaterialProperty(
-        image: 'art.scnassets/chest.scn',
-        )
-      );
-    final sphere = ARKitSphere(
-      materials: [material],
-      radius: 1.0,);
-    final node = ARKitNode(
-      geometry: sphere,
-      name: "sphere",
-      //position: vector.Vector3(0,0,-1.6),
-      //position: vector.Vector3(cos(_radians),0,sin(_radians)),
-      position: vector.Vector3(0,-5,-5),
-    );
-    */
 
     controller.add(node);
+  }
+
+  void tapAction (List<String> name) {
+print("tap:"+name.toString());
   }
 
 
@@ -231,7 +215,7 @@ print("ddddddddddddddddddddddd");
 //      lat0 = 33.565257;
 //      lon0 = 133.561714;
 
-      debugPrint("Current Position  lat: " + position.latitude.toString() + "   lon: " + position.longitude.toString() + "   acc: " + position.accuracy.toString());
+//      debugPrint("Current Position  lat: " + position.latitude.toString() + "   lon: " + position.longitude.toString() + "   acc: " + position.accuracy.toString());
 
       double dist = distanceBetween(lat0, lon0, lat1, lon1);
       double bear = bearingBetween(lat0, lon0, lat1, lon1);
@@ -242,19 +226,19 @@ print("ddddddddddddddddddddddd");
       if( rotation < 0 ) rotation = 360 + rotation;
       rotation = 360 + 90 - rotation;
       if( rotation >= 360 ) rotation = rotation - 360;
-      debugPrint("Target Position  dist: " + dist.toString() + "  rot: " + rotation.toString());
+//      debugPrint("Target Position  dist: " + dist.toString() + "  rot: " + rotation.toString());
 
       double zz = (-1 * dist * sin(toRadians(rotation)));
       double xx = ( dist * cos(toRadians(rotation)));
-      debugPrint("Target Position x: " + _x.toString() + "  z: " + _z.toString());
+//      debugPrint("Target Position x: " + _x.toString() + "  z: " + _z.toString());
 
-
+/*
       setState((){
         _acc = "acc: " + position.accuracy.toString() + "\ndist: " + dist.toString() + "\nrota: " + rotation.toString();
         _acc += "\nbear: " + bear.toString() + "\ncompas: " + _compas.toString();
         _acc += "\nx: " + xx.toString() + "\nz: " + zz.toString();
       });
-
+*/
 
       /*
       setState(() {
