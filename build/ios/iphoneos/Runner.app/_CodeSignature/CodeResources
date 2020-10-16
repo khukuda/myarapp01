@@ -110,7 +110,7 @@
 		</data>
 		<key>Frameworks/App.framework/App</key>
 		<data>
-		wDPIWtxpDPTj9OpkiXvBK4cR+DQ=
+		K/Aql+c4yw5XgeROHqPIKF1cIpc=
 		</data>
 		<key>Frameworks/App.framework/Info.plist</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Frameworks/App.framework/_CodeSignature/CodeResources</key>
 		<data>
-		w9mxkVYT8Fe65/++oL1Bv7jVMpY=
+		9oYr6CXpUj3HQ0OvBg1qcjTJUZM=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
 		<data>
@@ -158,7 +158,7 @@
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/kernel_blob.bin</key>
 		<data>
-		HQeaCkbCVNinA+MkH07sPb57f38=
+		MyUgQUPjpnCOZ9nULD2bCtfnJsw=
 		</data>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -170,15 +170,15 @@
 		</data>
 		<key>Frameworks/Flutter.framework/Flutter</key>
 		<data>
-		hbOU09AZiPE6ExCEviLEP/G5Ymo=
+		dLSLAauas1kw9r8uioRjHfqy/UI=
 		</data>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
 		<data>
-		WQxJPO6E2VJXfVPznVg9LEnAkdI=
+		m01oyz6749tF+I24uAAYQAd0Deg=
 		</data>
 		<key>Frameworks/Flutter.framework/_CodeSignature/CodeResources</key>
 		<data>
-		o/beKgRjWk/Xjv6NC0Mr2MZY30E=
+		vnSVj5pMZhdsuncYlpuf9KS6EBc=
 		</data>
 		<key>Frameworks/Flutter.framework/icudtl.dat</key>
 		<data>
@@ -194,7 +194,7 @@
 		</data>
 		<key>Frameworks/arkit_plugin.framework/arkit_plugin</key>
 		<data>
-		km+Oiv9Td1R2Wd70kP3L+byhiBQ=
+		Vy4qtJhHgQ/BAddFnEXx0UG9Fmg=
 		</data>
 		<key>Frameworks/flutter_compass.framework/Info.plist</key>
 		<data>
@@ -206,7 +206,7 @@
 		</data>
 		<key>Frameworks/flutter_compass.framework/flutter_compass</key>
 		<data>
-		1M+4JyoMsph6HjznUGRiRVeqhwk=
+		5XchC42sxLQe7bYR451HBKZeEh0=
 		</data>
 		<key>Frameworks/geolocator.framework/Info.plist</key>
 		<data>
@@ -218,7 +218,7 @@
 		</data>
 		<key>Frameworks/geolocator.framework/geolocator</key>
 		<data>
-		RPespdduf/ky7j3qE3XzB75b+Hc=
+		IWZuDKuD5RPqaCzoZ3QiuXEQ7wU=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -294,7 +294,7 @@
 		</data>
 		<key>art.scnassets/Andy.obj</key>
 		<data>
-		QXV+cwSK+/nUL7n9U03YXW9iWWU=
+		25AmgsfkaiL+eyEFcR0h44Tz8Dc=
 		</data>
 		<key>art.scnassets/Andy.sfa</key>
 		<data>
@@ -359,6 +359,14 @@
 		<key>art.scnassets/fox_face_material.mat</key>
 		<data>
 		C8qi+Yrqo5DS4xe8qPgSZVfk4eg=
+		</data>
+		<key>art.scnassets/materials.mtl</key>
+		<data>
+		ahhgwwcRrzLRKKramZcIPQtaUz8=
+		</data>
+		<key>art.scnassets/model.obj</key>
+		<data>
+		6ubrvUiyM2Yaidn0eCdUsYxmMMY=
 		</data>
 		<key>art.scnassets/nose_fur.png</key>
 		<data>
@@ -561,7 +569,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			if66qKVxiutwp8PTNmAVwDCD4N2CxJNVMlRs1DfYcXk=
+			jJAEgVU58TaPSwSJ2snhjXnQDEGHvg3qLNsr4vAFGns=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/Info.plist</key>
@@ -575,7 +583,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			7VG4FS17uw2nxQYH5PSTvmIbpDl8+oCjJ907R6UOUdw=
+			JbOxsR4OMZ3cChHhnVBysbMUJbkkMe6glyCpzWB4U3Q=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/AssetManifest.json</key>
@@ -645,7 +653,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s05V7k/LwihiUHIfoC1d7xwZA7mAcpoAndxgRRCO+3Y=
+			SqcCwT4qCQ2H2z+fwrFHcoeua6iieTa+KCRuNXoHRCw=
 			</data>
 		</dict>
 		<key>Frameworks/App.framework/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
@@ -666,21 +674,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yoNPrt7du0SxB5//OjTj37MC7OV2i9dUBH6mgWHHk6M=
+			II54F/MQ0nw/zuJ90zIxGFdQhEzkdUTI50PP9BUURgE=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WhBIXUlH8RP4jyhua5sq6Q7fcHjpmmR0Yq9tcrtWNk8=
+			DWhAcLdMV7PzhThnIs4SZRw0Q4SFY0EivxLmxEYfnC4=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O9IsYCYzuvs3Pn1+JsKq0UpPpJx/5VUkuVtyl8p7ORU=
+			Vj6VD5JutMSOQyUNoYz55rq5OU3qfxKjujna85NWRoM=
 			</data>
 		</dict>
 		<key>Frameworks/Flutter.framework/icudtl.dat</key>
@@ -708,7 +716,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VmhLzMyQt9TCA2u+dpAO95VJVUiQqsaHIjdGe9LO3GU=
+			cbcC3tRbAkMSOrRwO6htxzoKOAvquaKXgZ6Go4JPiTg=
 			</data>
 		</dict>
 		<key>Frameworks/flutter_compass.framework/Info.plist</key>
@@ -729,7 +737,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			1W98Zjxa8dtKldXx1MaHEf/PJMsq/EshLxAvyO//wFg=
+			msAvkyOKMO8HK8suKZRqy7B1lZNASc20Erx0L8Zbj+8=
 			</data>
 		</dict>
 		<key>Frameworks/geolocator.framework/Info.plist</key>
@@ -750,7 +758,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			0+Cp5IRzuXM/X0Kal6JoxGx4uD5EG5n1Qim0oNle3AQ=
+			xXp7rpjshdoxl+Jzr6xgdqtkH3+EJqLbaWdVrZetbPc=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -869,7 +877,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k2QUqAv58nrUaIzYRLS+BsY88uupBgW+50M4J9FBbLI=
+			3B1OLOd+tapnILJ445uNu01a1zeyOkIQheYQlkDYsxQ=
 			</data>
 		</dict>
 		<key>art.scnassets/Andy.sfa</key>
@@ -982,6 +990,20 @@
 			<key>hash2</key>
 			<data>
 			Zs4pPTqGOi9y/vOKawVoEsuqCkUsNSL9quzFVMECaUY=
+			</data>
+		</dict>
+		<key>art.scnassets/materials.mtl</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N62xV80zWtEdmUC9k+C3qoeta3hY/RkiQDVsnwYP+tc=
+			</data>
+		</dict>
+		<key>art.scnassets/model.obj</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1tuJrzsbmhL4qck2Fjn78OG+XvYYL6tzO5FhfdBj7wY=
 			</data>
 		</dict>
 		<key>art.scnassets/nose_fur.png</key>

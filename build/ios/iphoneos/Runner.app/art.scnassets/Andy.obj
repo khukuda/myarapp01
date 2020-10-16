@@ -1,7 +1,6 @@
 # This file uses centimeters as units for non-parametric coordinates.
 
 mtllib Andy.mtl
-g default
 v 0.036531 0.203676 -0.001768
 v 0.035000 0.204560 -0.002500
 v 0.033469 0.205443 -0.001768
@@ -7371,7 +7370,6 @@ vn 0.289764 0.942364 -0.167296
 vn 0.000000 1.000000 0.000000
 vn 0.334592 0.942363 0.000000
 s off
-g Andy_GEO
 usemtl initialShadingGroup
 f 1/1/1 2/2/2 10/3/3 9/4/4
 f 2/2/5 3/5/6 11/6/7 10/3/8

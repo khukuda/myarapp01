@@ -112,29 +112,89 @@ class _HelloWorldState extends State<HelloWorld>{
   void _onARKitViewCreated(ARKitController controller){
     arKitController = controller;
 
-    arKitController.onNodeTap = tapAction;
-
-    //_addSphere(arKitController);
+//    _addSphere(arKitController);
+//    _addPlane(arKitController);
+    _addBox(arKitController);
     _add3DObj(arKitController);
+    _add3DObj2(arKitController);
 
     //_addCylindre(arCoreController);
     //_addCube(arCoreController);
+  
+    arKitController.onNodeTap = (nodes) => tapAction(nodes);
+    
+
+  }
+  
+  void _addBox(ARKitController controller){
+    final material = ARKitMaterial(
+      //lightingModelName: ARKitLightingModel.physicallyBased,
+      diffuse: ARKitMaterialProperty(
+        //color: Color((Random().nextDouble() * 0xFFFFFF).toInt() << 0).withOpacity(0.0),
+        color: Color.fromARGB(255, 1, 134, 244).withOpacity(1.0),
+        ),
+        transparency: 0,
+      );
+    final box = ARKitBox (
+      width: 0.5,
+      height: 0.5,
+      length: 0.5,
+      chamferRadius: 0.1,
+      materials: [material],
+    );
+    final node = ARKitNode(
+      geometry: box,
+      name: "shikaku",
+      scale: vector.Vector3.all(1),
+      position: vector.Vector3(0, -0.5, -0.5),
+    );
+
+    controller.add(node);
+
   }
 
   void _addSphere(ARKitController controller){
     final material = ARKitMaterial(
       diffuse: ARKitMaterialProperty(
-        color: Color.fromARGB(200, 66, 134, 244),)
+        color: Color.fromARGB(5, 66, 134, 244),)
       );
     final sphere = ARKitSphere(
       materials: [material],
-      radius: 1.0,);
+      radius: 0.1,);
     final node = ARKitNode(
       geometry: sphere,
       name: "sphere",
       //position: vector.Vector3(0,0,-1.6),
       //position: vector.Vector3(cos(_radians),0,sin(_radians)),
-      position: vector.Vector3(0,-5,-5),
+      position: vector.Vector3(0,-0.5,-0.5),
+    );
+
+    controller.add(node);
+  }
+
+  void _addPlane(ARKitController controller){
+    final plane = ARKitPlane(
+      width: 2,
+      height: 2,
+      materials: [
+        ARKitMaterial(
+          diffuse: ARKitMaterialProperty(
+            color: Color.fromARGB(5, 66, 134, 244),
+          )
+        )
+      ],
+    );
+    final node = ARKitNode(
+      geometry: plane,
+      physicsBody: ARKitPhysicsBody(
+        ARKitPhysicsBodyType.staticType,
+        shape: ARKitPhysicsShape(plane),
+//        categoryBitMask: BodyType.plane.index + 1,
+      ),
+      scale: vector.Vector3.all(0.1),
+      
+//      rotation: vector.Vector4(0.5, 0.5, 0.5, 0.5),
+      position: vector.Vector3(0, -0.5, -0.5),
     );
 
     controller.add(node);
@@ -144,11 +204,31 @@ class _HelloWorldState extends State<HelloWorld>{
   void _add3DObj(ARKitController controller){
 
     final node = ARKitReferenceNode(
+      name: 'andy',
       url: 'art.scnassets/Andy.obj',
 //      url: 'art.scnassets/chest.scn',
       scale: vector.Vector3.all(1),
       position: vector.Vector3(0,-0.5,-0.5),
-      name: "andy"
+ /*     light: ARKitLight(
+        color: Color.fromARGB(200, 66, 134, 244),
+        intensity: 3000,
+        type: ARKitLightType.spot
+        )
+        */
+      ); 
+
+
+    controller.add(node);
+  }
+  void _add3DObj2(ARKitController controller){
+
+    final node = ARKitReferenceNode(
+      name: 'andy2',
+      url: 'art.scnassets/model.obj',
+//      url: 'art.scnassets/chest.scn',
+      scale: vector.Vector3.all(0.1),
+      position: vector.Vector3(0,-0.1,-0.1),
+      renderingOrder: 2,
  /*     light: ARKitLight(
         color: Color.fromARGB(200, 66, 134, 244),
         intensity: 3000,
@@ -161,8 +241,8 @@ class _HelloWorldState extends State<HelloWorld>{
     controller.add(node);
   }
 
-  void tapAction (List<String> name) {
-print("tap:"+name.join(":::"));
+  void tapAction (List<String> params) {
+print("tap:"+params.join(";;;"));
     Navigator.push(
       context,
       PageRouteBuilder(
@@ -221,7 +301,7 @@ print("tap:"+name.join(":::"));
   
 
   void _onGetPosition(Position position){
-    print("Location " + avgcnt.toString());
+//    print("Location " + avgcnt.toString());
     double acc = position.accuracy;
     if( position.accuracy < 25 ){
       double lat0 = position.latitude;
