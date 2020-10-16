@@ -246,10 +246,10 @@ print("tap:"+params.join(";;;"));
     Navigator.push(
       context,
       PageRouteBuilder(
-        pageBuilder: (context, animation, secondaryAnimation) => getPage(),
+        pageBuilder: (context, animation, secondaryAnimation) => getPage("aaa111"),
         transitionsBuilder: (context, animation, secondaryAnimation, child){
           return ZoomPageTransitionsBuilder().buildTransitions(
-            MaterialPageRoute(builder: (context) => getPage()),
+            MaterialPageRoute(builder: (context) => getPage("bbb")),
             context,
             animation,
             secondaryAnimation,
@@ -375,8 +375,14 @@ print("tap:"+params.join(";;;"));
 }
 
 class getPage extends StatelessWidget {
+  String text = "";
+  getPage(String text) {
+    this.text = text;
+  }
+
   @override
   Widget build(BuildContext context) {
+print(this.text);
     return Scaffold(
 //      appBar: AppBar(title: Text('Flutter Demo 2'),),
       body: Center(
